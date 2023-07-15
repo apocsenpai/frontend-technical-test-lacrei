@@ -1,12 +1,37 @@
 import * as React from "react";
-import type { HeadFC } from "gatsby";
+import { HeadFC, Link } from "gatsby";
+
 import Layout from "../components/Layout";
+import {
+  ButtonGroup,
+  ContentDescription,
+  ContentTitle,
+  ContentWrapper,
+  Image,
+} from "../components/Layout/styled";
+import homeImg from "../images/home_img.svg";
+import Button from "../components/Button";
 
 export default function Home() {
   return (
     <Layout>
-      <h1>Welcome to my Gatsby site!</h1>
-      <p>I'm makin this by following the Gatsby Tutorial.</p>
+      <ContentWrapper>
+        <ContentTitle>Boas vindas a Lacrei Saúde</ContentTitle>
+        <ContentDescription>
+          Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+
+        </ContentDescription>
+        <ButtonGroup>
+          <Link to="/pessoa-usuaria">
+            <Button fill={true}>Pessoa Usuária</Button>
+          </Link>
+          <Link to="/profissional">
+            <Button fill={false}>Profissional</Button>
+          </Link>
+        </ButtonGroup>
+      </ContentWrapper>
+      <ContentWrapper>
+        <Image src={homeImg} alt="Home" />
+      </ContentWrapper>
     </Layout>
   );
 }

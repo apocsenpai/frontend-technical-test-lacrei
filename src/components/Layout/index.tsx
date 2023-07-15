@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Container, ContainerWrapper } from "./styled";
+import { Container, ContainerWrapper, FlexWrapper } from "./styled";
 import { ResetCss } from "../../assets/ResetCss";
 import Header from "../Header";
 import Footer from "../Footer";
@@ -10,7 +10,7 @@ export default function Layout({ children }: React.PropsWithChildren) {
       <ResetCss />
       <Header />
       <ContainerWrapper>
-        {children}
+        <FlexWrapper>{children}</FlexWrapper>
         <Footer />
       </ContainerWrapper>
     </Container>
