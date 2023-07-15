@@ -13,6 +13,14 @@ export const Container = styled.header`
     color: #018762;
     line-height: 2.75rem;
   }
+
+  @media (max-width: 1040px) {
+    padding: 0.5rem 2rem;
+  }
+  @media (max-width: 520px) {
+    flex-direction: column;
+    padding: 0.5rem 1em;
+  }
 `;
 
 export const NavBar = styled.nav`
@@ -28,5 +36,14 @@ export const NavBar = styled.nav`
 
   & > a.active {
     color: #018762;
+  }
+
+  @media (max-width: 1040px) {
+    gap: 2rem;
+  }
+
+  @media (max-width: 520px) {
+    gap: 1rem;
+    font-size: 0.875rem;
   }
 `;

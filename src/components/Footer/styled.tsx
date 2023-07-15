@@ -14,6 +14,16 @@ export const Container = styled.footer`
     color: #515151;
     font-size: 0.75rem;
   }
+
+  @media (max-width: 520px) {
+    padding-top: 1rem;
+
+    & > nav:nth-child(1) {
+      flex-direction: column;
+      justify-content: start;
+      gap: 0.5rem;
+    }
+  }
 `;
 
 export const NavBar = styled(HeaderNavBar)`
