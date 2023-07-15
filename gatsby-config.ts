@@ -17,6 +17,7 @@ const config: GatsbyConfig = {
       },
     },
     "gatsby-plugin-styled-components",
+    "gatsby-plugin-fontawesome-css",
     {
       resolve: `gatsby-omni-font-loader`,
       options: {

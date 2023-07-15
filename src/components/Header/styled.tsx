@@ -7,13 +7,6 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  a {
-    transition: all ease 200ms;
-  }
-  a:hover {
-    opacity: 0.7;
-  }
-
   & > a {
     font-size: 2rem;
     font-weight: 700;
